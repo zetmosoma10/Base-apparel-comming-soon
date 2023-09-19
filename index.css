@@ -1,0 +1,147 @@
+html {
+    font-size:62.5%;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+--Desaturated-Red: hsl(0, 36%, 70%);
+--Soft-Red: hsl(0, 93%, 68%);
+/* ### Neutral */
+--Dark-Grayish-Red: hsl(0, 6%, 24%);
+/* ### Gradients */
+--linear-gradient-one: background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+--Linear-gradient-two:background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+body {
+    background-image: url(images/bg-pattern-desktop.svg);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-top: 0;
+    line-height: 22px;
+    color: var(--Desaturated-Red);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 10.83px;
+    margin-bottom: 1.6rem;
+}
+
+.head-black {
+    line-height: 42px;
+    font-weight: 600;
+color: var(--Dark-Grayish-Red);
+}
+
+.head-red{
+    font-weight: 300;
+    line-height: 42px;
+    color: var(--Desaturated-Red);
+}
+
+@media screen and (min-width:900px) {
+    p {
+    font-size: 1.6rem;
+    line-height: 28px;
+}
+
+h1 {
+    font-size: 6.4rem;
+    letter-spacing: 17.32px;
+    margin-bottom: 3.2rem;
+
+}
+
+.head-red {
+    line-height: 64px;
+}
+
+.head-black {
+    line-height: 71px;
+}    
+}
+
+/* Form */
+
+.form {
+    position: relative;
+    border: 0;
+}
+
+
+input {
+    border: .5px solid var(--Desaturated-Red);
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.4rem;
+    line-height: 28px;
+    text-indent: 2.2rem;
+    padding: 1rem 0;
+    color: var(--Dark-Grayish-Red);
+    caret-color: var(--Dark-Grayish-Red);
+    border-radius: 30px;
+    outline: 0;
+}
+
+input:focus {
+    border-color: var(--Desaturated-Red);
+}
+
+input::placeholder {
+    color: var(--Desaturated-Red);
+}
+
+.btn {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    border: 0;
+    width: 60px;
+    border-radius: 30px;
+    right: 0;
+    background-color: var(--Soft-Red);
+} 
+
+.icon-warning {
+    position: absolute;
+    top: 50%;
+    right: 7rem;
+    transform: translateY(-50%);
+}
+
+.text-warning {
+    color: var(--Soft-Red);
+}
+
+.input-warning {
+color: var(--Soft-Red);
+border: 2px solid var(--Soft-Red);
+}
+
+
+
+@media screen and (min-width:900px) {
+    input {
+        font-size: 1.6rem;
+        padding: .7rem 0;
+    }
+
+    .icon-warning {
+        right: 11rem;
+    }
+
+    .btn {
+        width: 90px;
+    }
+}
+
+
